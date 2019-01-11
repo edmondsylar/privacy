@@ -53,3 +53,6 @@ class container:
 
         vessel(file, arg)
         print ('Done with vessel Variables.')
+
+        rest(file, arg)
+        print ('Completed all the extractions.')

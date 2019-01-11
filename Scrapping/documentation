@@ -1,0 +1,33 @@
+Two files required ie
+	1.Temp_file 
+		the actual file for reading.
+
+	2.temp_check_update
+		The file downloaded for reading and checking for any update.
+
+funcrion one:
+	-Download file 2
+	-Pick Publish data and record count and make two variables out of then.
+	-After creating.
+		1-Data_published variable(string)
+		2-record count(Integer).
+
+	NEXT:
+	check the current file being used for the varibles
+	1-Date Publised and 
+	2-Record count.
+
+	Create two variables out.
+		1-last_date_publised (string)
+		2-last_record_count(int)
+
+	Make a comparison between the twi files basing on the record_count and the data published.
+
+	if(No difference):
+		delete file(temp_check_update)
+		send notification ('No updates registered).
+		Delete the (temp_check_udpdate) file
+	
+	else:    (#If therer is a registered difference between the two files.)
+
+		Check for the changed files, return number of records updated/added and insert them into the databas.
