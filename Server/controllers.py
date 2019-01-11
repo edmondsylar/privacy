@@ -7,7 +7,7 @@ connection = {
     'host':'localhost',
     'user':'root',
     'passwd':None,
-    'database':'astute'
+    'database':'development_sdn'
 }
 
 fileName = 'dumps.csv'
