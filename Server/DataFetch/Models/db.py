@@ -110,7 +110,7 @@ class dbModel:
 
 	def t_sdn_idList(self, sdnUid, idUid, fetchedInformationUid):
 		records = []
-		update_var = "SELECT sdnUid FROM t_sdn_idList"
+		update_var = "SELECT sdnUid FROM t_sdn_idlist"
 		self.cur.execute(update_var)
 		data = self.cur.fetchall()
 		for all in data:
