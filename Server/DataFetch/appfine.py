@@ -196,4 +196,4 @@ def getter(*args):
 			sdn_trigger(file_name, batch)
 
 main()
-sys('rm {}'.format())
+sys('rm {}'.format(file_name))

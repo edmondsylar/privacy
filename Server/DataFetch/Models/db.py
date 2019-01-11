@@ -378,7 +378,7 @@ class dbModel:
 		if sdnUid in records:
 			pass
 		else:
-			sql = "INSERT INTO `t_sdn_addresslist_country`(`sdnUid`, `addressUid`, `country`, `fetchedInformationUid`) VALUES ('{}', '{}', '{}')".format(sdnUid, addressUid, country, fetchedInformationUid)
+			sql = "INSERT INTO `t_sdn_addresslist_country`(`sdnUid`, `addressUid`, `country`, `fetchedInformationUid`) VALUES ('{}', '{}', '{}', '{}')".format(sdnUid, addressUid, country, fetchedInformationUid)
 			self.cur.execute(sql)
 			self.conn.commit()
 
