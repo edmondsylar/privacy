@@ -427,7 +427,7 @@ class dbModel:
 		if sdnUid in records:
 			pass
 		else:
-			sql = "INSERT INTO `t_sdn_dateofbirthlist`(`sdnUid`, `dateOfBirthUid`, `dateOfBirth`, `mainEntry`, `fetchedInformationUid`) VALUES ('{}', '{}', '{}', '{}')".format(sdnUid, dateOfBirthUid, dateOfBirth, mainEntry, fetchedInformationUid)
+			sql = "INSERT INTO `t_sdn_dateofbirthlist`(`sdnUid`, `dateOfBirthUid`, `dateOfBirth`, `mainEntry`, `fetchedInformationUid`) VALUES ('{}', '{}', '{}', '{}', '{}')".format(sdnUid, dateOfBirthUid, dateOfBirth, mainEntry, fetchedInformationUid)
 			self.cur.execute(sql)
 			self.conn.commit()
 
